@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CampaignResourceSpec" tests="3" skipped="0" failures="2" errors="0" timestamp="2016-06-15T06:19:43" hostname="Germans-MBP.lan" time="4.106">
+  <properties/>
+  <testcase name="When scenario [request:[monthlyInventory:32356000, specifications:[[customer:Acme, impressions:2000000, price:200], [customer:Lorem, impressions:3500000, price:400], [customer:Ipsum, impressions:2300000, price:210], [customer:Dolor, impressions:8000000, price:730], [customer:SIT, impressions:10000000, price:1000], [customer:Amet, impressions:1500000, price:160], [customer:Mauris, impressions:1000000, price:100]]], response:[totalNumberOfImpressions:32000000, totalRevenue:3620, offers:[[customer:Acme, campaigns:0, impressions:0, revenue:0], [customer:Lorem, campaigns:8, impressions:28000000, revenue:3200], [customer:Ipsum, campaigns:0, impressions:0, revenue:0], [customer:Dolor, campaigns:0, impressions:0, revenue:0], [customer:SIT, campaigns:0, impressions:0, revenue:0], [customer:Amet, campaigns:2, impressions:3000000, revenue:320], [customer:Mauris, campaigns:1, impressions:1000000, revenue:100]]]]" classname="CampaignResourceSpec" time="3.365"/>
+  <testcase name="When scenario [request:[monthlyInventory:50000000, specifications:[[customer:Acme, impressions:2000000, price:200], [customer:Lorem, impressions:2, price:2], [customer:Ipsum, impressions:3, price:2], [customer:Dolor, impressions:70000, price:71000], [customer:Mauris, impressions:49000000, price:50000000]]], response:[totalNumberOfImpressions:50000000, totalRevenue:51014000, offers:[[customer:Acme, campaigns:0, impressions:0, revenue:0], [customer:Lorem, campaigns:10000, impressions:20000, revenue:20000], [customer:Ipsum, campaigns:0, impressions:0, revenue:0], [customer:Dolor, campaigns:14, impressions:980000, revenue:994000], [customer:Mauris, campaigns:1, impressions:49000000, revenue:50000000]]]]" classname="CampaignResourceSpec" time="0.472">
+    <failure message="Condition not satisfied:&#10;&#10;actual.totalRevenue == expected.totalRevenue&#10;|      |            |  |        |&#10;|      50713000     |  |        51014000&#10;|                   |  [totalNumberOfImpressions:50000000, totalRevenue:51014000, offers:[[customer:Acme, campaigns:0, impressions:0, revenue:0], [customer:Lorem, campaigns:10000, impressions:20000, revenue:20000], [customer:Ipsum, campaigns:0, impressions:0, revenue:0], [customer:Dolor, campaigns:14, impressions:980000, revenue:994000], [customer:Mauris, campaigns:1, impressions:49000000, revenue:50000000]]]&#10;|                   false&#10;[totalNumberOfImpressions:50000000, totalRevenue:50713000, offers:[[customer:Mauris, campaigns:0, impressions:0, revenue:0], [customer:Dolor, campaigns:713, impressions:49910000, revenue:50623000], [customer:Lorem, campaigns:45000, impressions:90000, revenue:90000], [customer:Ipsum, campaigns:0, impressions:0, revenue:0], [customer:Acme, campaigns:0, impressions:0, revenue:0]]]&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+actual.totalRevenue == expected.totalRevenue
+|      |            |  |        |
+|      50713000     |  |        51014000
+|                   |  [totalNumberOfImpressions:50000000, totalRevenue:51014000, offers:[[customer:Acme, campaigns:0, impressions:0, revenue:0], [customer:Lorem, campaigns:10000, impressions:20000, revenue:20000], [customer:Ipsum, campaigns:0, impressions:0, revenue:0], [customer:Dolor, campaigns:14, impressions:980000, revenue:994000], [customer:Mauris, campaigns:1, impressions:49000000, revenue:50000000]]]
+|                   false
+[totalNumberOfImpressions:50000000, totalRevenue:50713000, offers:[[customer:Mauris, campaigns:0, impressions:0, revenue:0], [customer:Dolor, campaigns:713, impressions:49910000, revenue:50623000], [customer:Lorem, campaigns:45000, impressions:90000, revenue:90000], [customer:Ipsum, campaigns:0, impressions:0, revenue:0], [customer:Acme, campaigns:0, impressions:0, revenue:0]]]
+
+	at CampaignResourceSpec.When scenario #scenario(CampaignResourceSpec.groovy:31)
+</failure>
+  </testcase>
+  <testcase name="When scenario [request:[monthlyInventory:2000000000, specifications:[[customer:Acme, impressions:1000000, price:5000], [customer:Lorem, impressions:2000000, price:9000], [customer:Ipsum, impressions:3000000, price:20000]]], response:[totalNumberOfImpressions:2000000000, totalRevenue:13330000, offers:[[customer:Acme, campaigns:2, impressions:2000000, revenue:10000], [customer:Lorem, campaigns:0, impressions:0, revenue:0], [customer:Ipsum, campaigns:666, impressions:1998000000, revenue:13320000]]]]" classname="CampaignResourceSpec" time="0.267">
+    <failure message="Condition not satisfied:&#10;&#10;actual.totalRevenue == expected.totalRevenue&#10;|      |            |  |        |&#10;|      13325000     |  |        13330000&#10;|                   |  [totalNumberOfImpressions:2000000000, totalRevenue:13330000, offers:[[customer:Acme, campaigns:2, impressions:2000000, revenue:10000], [customer:Lorem, campaigns:0, impressions:0, revenue:0], [customer:Ipsum, campaigns:666, impressions:1998000000, revenue:13320000]]]&#10;|                   false&#10;[totalNumberOfImpressions:2000000000, totalRevenue:13325000, offers:[[customer:Ipsum, campaigns:665, impressions:1995000000, revenue:13300000], [customer:Acme, campaigns:5, impressions:5000000, revenue:25000], [customer:Lorem, campaigns:0, impressions:0, revenue:0]]]&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+actual.totalRevenue == expected.totalRevenue
+|      |            |  |        |
+|      13325000     |  |        13330000
+|                   |  [totalNumberOfImpressions:2000000000, totalRevenue:13330000, offers:[[customer:Acme, campaigns:2, impressions:2000000, revenue:10000], [customer:Lorem, campaigns:0, impressions:0, revenue:0], [customer:Ipsum, campaigns:666, impressions:1998000000, revenue:13320000]]]
+|                   false
+[totalNumberOfImpressions:2000000000, totalRevenue:13325000, offers:[[customer:Ipsum, campaigns:665, impressions:1995000000, revenue:13300000], [customer:Acme, campaigns:5, impressions:5000000, revenue:25000], [customer:Lorem, campaigns:0, impressions:0, revenue:0]]]
+
+	at CampaignResourceSpec.When scenario #scenario(CampaignResourceSpec.groovy:31)
+</failure>
+  </testcase>
+  <system-out><![CDATA[INFO  [2016-06-15 06:19:45,198] org.eclipse.jetty.util.log: Logging initialized @2935ms
+INFO  [2016-06-15 06:19:45,344] io.dropwizard.server.ServerFactory: Starting ImpressionCampaignApplication
+INFO  [2016-06-15 06:19:45,361] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2016-06-15 06:19:45,382] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2016-06-15 06:19:45,435] org.eclipse.jetty.setuid.SetUIDListener: Opened application@1339616c{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:45,436] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@529c002c{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:45,439] org.eclipse.jetty.server.Server: jetty-9.2.13.v20150730
+INFO  [2016-06-15 06:19:46,270] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    POST    /campaign (impression.campain.resource.CampaignResource)
+
+INFO  [2016-06-15 06:19:46,274] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@5adaf019{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:46,277] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2016-06-15 06:19:46,281] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@758b7bb9{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:46,287] org.eclipse.jetty.server.ServerConnector: Started application@1339616c{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:46,287] org.eclipse.jetty.server.ServerConnector: Started admin@529c002c{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:46,287] org.eclipse.jetty.server.Server: Started @4025ms
+127.0.0.1 - - [15/Jun/2016:06:19:46 +0000] "POST /campaign HTTP/1.1" 200 532 "-" "ImpressionCampaignApplication (test client)" 211
+INFO  [2016-06-15 06:19:47,128] org.eclipse.jetty.server.ServerConnector: Stopped application@1339616c{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,130] org.eclipse.jetty.server.ServerConnector: Stopped admin@529c002c{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,132] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@758b7bb9{/,null,UNAVAILABLE}
+INFO  [2016-06-15 06:19:47,135] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@5adaf019{/,null,UNAVAILABLE}
+INFO  [2016-06-15 06:19:47,261] io.dropwizard.server.ServerFactory: Starting ImpressionCampaignApplication
+INFO  [2016-06-15 06:19:47,261] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2016-06-15 06:19:47,263] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2016-06-15 06:19:47,268] org.eclipse.jetty.setuid.SetUIDListener: Opened application@7bd3b{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,269] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@16eb5b04{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,269] org.eclipse.jetty.server.Server: jetty-9.2.13.v20150730
+INFO  [2016-06-15 06:19:47,405] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    POST    /campaign (impression.campain.resource.CampaignResource)
+
+INFO  [2016-06-15 06:19:47,407] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@337d90d0{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:47,408] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2016-06-15 06:19:47,410] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@49cbaaf5{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:47,413] org.eclipse.jetty.server.ServerConnector: Started application@7bd3b{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,416] org.eclipse.jetty.server.ServerConnector: Started admin@16eb5b04{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,416] org.eclipse.jetty.server.Server: Started @5155ms
+127.0.0.1 - - [15/Jun/2016:06:19:47 +0000] "POST /campaign HTTP/1.1" 200 415 "-" "ImpressionCampaignApplication (test client)" 18
+INFO  [2016-06-15 06:19:47,588] org.eclipse.jetty.server.ServerConnector: Stopped application@7bd3b{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,598] org.eclipse.jetty.server.ServerConnector: Stopped admin@16eb5b04{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,599] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@49cbaaf5{/,null,UNAVAILABLE}
+INFO  [2016-06-15 06:19:47,601] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@337d90d0{/,null,UNAVAILABLE}
+INFO  [2016-06-15 06:19:47,699] io.dropwizard.server.ServerFactory: Starting ImpressionCampaignApplication
+INFO  [2016-06-15 06:19:47,700] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2016-06-15 06:19:47,700] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2016-06-15 06:19:47,703] org.eclipse.jetty.setuid.SetUIDListener: Opened application@1fac9a71{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,703] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@54577398{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,703] org.eclipse.jetty.server.Server: jetty-9.2.13.v20150730
+INFO  [2016-06-15 06:19:47,797] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    POST    /campaign (impression.campain.resource.CampaignResource)
+
+INFO  [2016-06-15 06:19:47,800] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@c42af59{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:47,800] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2016-06-15 06:19:47,802] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@6c3fcdf6{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:47,803] org.eclipse.jetty.server.ServerConnector: Started application@1fac9a71{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,805] org.eclipse.jetty.server.ServerConnector: Started admin@54577398{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,806] org.eclipse.jetty.server.Server: Started @5545ms
+127.0.0.1 - - [15/Jun/2016:06:19:47 +0000] "POST /campaign HTTP/1.1" 200 290 "-" "ImpressionCampaignApplication (test client)" 17
+INFO  [2016-06-15 06:19:47,870] org.eclipse.jetty.server.ServerConnector: Stopped application@1fac9a71{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,874] org.eclipse.jetty.server.ServerConnector: Stopped admin@54577398{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,874] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@6c3fcdf6{/,null,UNAVAILABLE}
+INFO  [2016-06-15 06:19:47,876] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@c42af59{/,null,UNAVAILABLE}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

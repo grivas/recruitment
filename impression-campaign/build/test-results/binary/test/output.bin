@@ -1,0 +1,76 @@
+XINFO  [2016-06-15 06:19:45,198] org.eclipse.jetty.util.log: Logging initialized @2935ms
+kINFO  [2016-06-15 06:19:45,344] io.dropwizard.server.ServerFactory: Starting ImpressionCampaignApplication
+INFO  [2016-06-15 06:19:45,361] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+~INFO  [2016-06-15 06:19:45,382] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+}INFO  [2016-06-15 06:19:45,435] org.eclipse.jetty.setuid.SetUIDListener: Opened application@1339616c{HTTP/1.1}{0.0.0.0:8080}
+wINFO  [2016-06-15 06:19:45,436] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@529c002c{HTTP/1.1}{0.0.0.0:8081}
+XINFO  [2016-06-15 06:19:45,439] org.eclipse.jetty.server.Server: jetty-9.2.13.v20150730
+ŒINFO  [2016-06-15 06:19:46,270] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+E    POST    /campaign (impression.campain.resource.CampaignResource)
+
+—INFO  [2016-06-15 06:19:46,274] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@5adaf019{/,null,AVAILABLE}
+OINFO  [2016-06-15 06:19:46,277] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+Q    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+K    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+—INFO  [2016-06-15 06:19:46,281] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@758b7bb9{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:46,287] org.eclipse.jetty.server.ServerConnector: Started application@1339616c{HTTP/1.1}{0.0.0.0:8080}
+yINFO  [2016-06-15 06:19:46,287] org.eclipse.jetty.server.ServerConnector: Started admin@529c002c{HTTP/1.1}{0.0.0.0:8081}
+QINFO  [2016-06-15 06:19:46,287] org.eclipse.jetty.server.Server: Started @4025ms
+ƒ127.0.0.1 - - [15/Jun/2016:06:19:46 +0000] "POST /campaign HTTP/1.1" 200 532 "-" "ImpressionCampaignApplication (test client)" 211
+INFO  [2016-06-15 06:19:47,128] org.eclipse.jetty.server.ServerConnector: Stopped application@1339616c{HTTP/1.1}{0.0.0.0:8080}
+yINFO  [2016-06-15 06:19:47,130] org.eclipse.jetty.server.ServerConnector: Stopped admin@529c002c{HTTP/1.1}{0.0.0.0:8081}
+™INFO  [2016-06-15 06:19:47,132] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@758b7bb9{/,null,UNAVAILABLE}
+™INFO  [2016-06-15 06:19:47,135] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@5adaf019{/,null,UNAVAILABLE}
+kINFO  [2016-06-15 06:19:47,261] io.dropwizard.server.ServerFactory: Starting ImpressionCampaignApplication
+INFO  [2016-06-15 06:19:47,261] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+~INFO  [2016-06-15 06:19:47,263] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+zINFO  [2016-06-15 06:19:47,268] org.eclipse.jetty.setuid.SetUIDListener: Opened application@7bd3b{HTTP/1.1}{0.0.0.0:8080}
+wINFO  [2016-06-15 06:19:47,269] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@16eb5b04{HTTP/1.1}{0.0.0.0:8081}
+XINFO  [2016-06-15 06:19:47,269] org.eclipse.jetty.server.Server: jetty-9.2.13.v20150730
+ŒINFO  [2016-06-15 06:19:47,405] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+E    POST    /campaign (impression.campain.resource.CampaignResource)
+
+—INFO  [2016-06-15 06:19:47,407] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@337d90d0{/,null,AVAILABLE}
+OINFO  [2016-06-15 06:19:47,408] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+Q    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+K    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+—INFO  [2016-06-15 06:19:47,410] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@49cbaaf5{/,null,AVAILABLE}
+|INFO  [2016-06-15 06:19:47,413] org.eclipse.jetty.server.ServerConnector: Started application@7bd3b{HTTP/1.1}{0.0.0.0:8080}
+yINFO  [2016-06-15 06:19:47,416] org.eclipse.jetty.server.ServerConnector: Started admin@16eb5b04{HTTP/1.1}{0.0.0.0:8081}
+QINFO  [2016-06-15 06:19:47,416] org.eclipse.jetty.server.Server: Started @5155ms
+‚127.0.0.1 - - [15/Jun/2016:06:19:47 +0000] "POST /campaign HTTP/1.1" 200 415 "-" "ImpressionCampaignApplication (test client)" 18
+|INFO  [2016-06-15 06:19:47,588] org.eclipse.jetty.server.ServerConnector: Stopped application@7bd3b{HTTP/1.1}{0.0.0.0:8080}
+yINFO  [2016-06-15 06:19:47,598] org.eclipse.jetty.server.ServerConnector: Stopped admin@16eb5b04{HTTP/1.1}{0.0.0.0:8081}
+™INFO  [2016-06-15 06:19:47,599] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@49cbaaf5{/,null,UNAVAILABLE}
+™INFO  [2016-06-15 06:19:47,601] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@337d90d0{/,null,UNAVAILABLE}
+kINFO  [2016-06-15 06:19:47,699] io.dropwizard.server.ServerFactory: Starting ImpressionCampaignApplication
+INFO  [2016-06-15 06:19:47,700] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+~INFO  [2016-06-15 06:19:47,700] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+}INFO  [2016-06-15 06:19:47,703] org.eclipse.jetty.setuid.SetUIDListener: Opened application@1fac9a71{HTTP/1.1}{0.0.0.0:8080}
+wINFO  [2016-06-15 06:19:47,703] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@54577398{HTTP/1.1}{0.0.0.0:8081}
+XINFO  [2016-06-15 06:19:47,703] org.eclipse.jetty.server.Server: jetty-9.2.13.v20150730
+ŒINFO  [2016-06-15 06:19:47,797] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+E    POST    /campaign (impression.campain.resource.CampaignResource)
+
+–INFO  [2016-06-15 06:19:47,800] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@c42af59{/,null,AVAILABLE}
+OINFO  [2016-06-15 06:19:47,800] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+Q    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+K    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+—INFO  [2016-06-15 06:19:47,802] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@6c3fcdf6{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:47,803] org.eclipse.jetty.server.ServerConnector: Started application@1fac9a71{HTTP/1.1}{0.0.0.0:8080}
+yINFO  [2016-06-15 06:19:47,805] org.eclipse.jetty.server.ServerConnector: Started admin@54577398{HTTP/1.1}{0.0.0.0:8081}
+QINFO  [2016-06-15 06:19:47,806] org.eclipse.jetty.server.Server: Started @5545ms
+‚127.0.0.1 - - [15/Jun/2016:06:19:47 +0000] "POST /campaign HTTP/1.1" 200 290 "-" "ImpressionCampaignApplication (test client)" 17
+INFO  [2016-06-15 06:19:47,870] org.eclipse.jetty.server.ServerConnector: Stopped application@1fac9a71{HTTP/1.1}{0.0.0.0:8080}
+yINFO  [2016-06-15 06:19:47,874] org.eclipse.jetty.server.ServerConnector: Stopped admin@54577398{HTTP/1.1}{0.0.0.0:8081}
+™INFO  [2016-06-15 06:19:47,874] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@6c3fcdf6{/,null,UNAVAILABLE}
+˜INFO  [2016-06-15 06:19:47,876] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@c42af59{/,null,UNAVAILABLE}

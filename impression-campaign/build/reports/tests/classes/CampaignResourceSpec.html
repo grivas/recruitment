@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class CampaignResourceSpec</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class CampaignResourceSpec</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; CampaignResourceSpec</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">2</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.104s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">33%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="When scenario [request:[monthlyInventory:2000000000, specifications:[[customer:Acme, impressions:1000000, price:5000], [customer:Lorem, impressions:2000000, price:9000], [customer:Ipsum, impressions:3000000, price:20000]]], response:[totalNumberOfImpressions:2000000000, totalRevenue:13330000, offers:[[customer:Acme, campaigns:2, impressions:2000000, revenue:10000], [customer:Lorem, campaigns:0, impressions:0, revenue:0], [customer:Ipsum, campaigns:666, impressions:1998000000, revenue:13320000]]]]"></a>
+<h3 class="failures">When scenario [request:[monthlyInventory:2000000000, specifications:[[customer:Acme, impressions:1000000, price:5000], [customer:Lorem, impressions:2000000, price:9000], [customer:Ipsum, impressions:3000000, price:20000]]], response:[totalNumberOfImpressions:2000000000, totalRevenue:13330000, offers:[[customer:Acme, campaigns:2, impressions:2000000, revenue:10000], [customer:Lorem, campaigns:0, impressions:0, revenue:0], [customer:Ipsum, campaigns:666, impressions:1998000000, revenue:13320000]]]]</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+actual.totalRevenue == expected.totalRevenue
+|      |            |  |        |
+|      13325000     |  |        13330000
+|                   |  [totalNumberOfImpressions:2000000000, totalRevenue:13330000, offers:[[customer:Acme, campaigns:2, impressions:2000000, revenue:10000], [customer:Lorem, campaigns:0, impressions:0, revenue:0], [customer:Ipsum, campaigns:666, impressions:1998000000, revenue:13320000]]]
+|                   false
+[totalNumberOfImpressions:2000000000, totalRevenue:13325000, offers:[[customer:Ipsum, campaigns:665, impressions:1995000000, revenue:13300000], [customer:Acme, campaigns:5, impressions:5000000, revenue:25000], [customer:Lorem, campaigns:0, impressions:0, revenue:0]]]
+
+	at CampaignResourceSpec.When scenario #scenario(CampaignResourceSpec.groovy:31)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="When scenario [request:[monthlyInventory:50000000, specifications:[[customer:Acme, impressions:2000000, price:200], [customer:Lorem, impressions:2, price:2], [customer:Ipsum, impressions:3, price:2], [customer:Dolor, impressions:70000, price:71000], [customer:Mauris, impressions:49000000, price:50000000]]], response:[totalNumberOfImpressions:50000000, totalRevenue:51014000, offers:[[customer:Acme, campaigns:0, impressions:0, revenue:0], [customer:Lorem, campaigns:10000, impressions:20000, revenue:20000], [customer:Ipsum, campaigns:0, impressions:0, revenue:0], [customer:Dolor, campaigns:14, impressions:980000, revenue:994000], [customer:Mauris, campaigns:1, impressions:49000000, revenue:50000000]]]]"></a>
+<h3 class="failures">When scenario [request:[monthlyInventory:50000000, specifications:[[customer:Acme, impressions:2000000, price:200], [customer:Lorem, impressions:2, price:2], [customer:Ipsum, impressions:3, price:2], [customer:Dolor, impressions:70000, price:71000], [customer:Mauris, impressions:49000000, price:50000000]]], response:[totalNumberOfImpressions:50000000, totalRevenue:51014000, offers:[[customer:Acme, campaigns:0, impressions:0, revenue:0], [customer:Lorem, campaigns:10000, impressions:20000, revenue:20000], [customer:Ipsum, campaigns:0, impressions:0, revenue:0], [customer:Dolor, campaigns:14, impressions:980000, revenue:994000], [customer:Mauris, campaigns:1, impressions:49000000, revenue:50000000]]]]</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+actual.totalRevenue == expected.totalRevenue
+|      |            |  |        |
+|      50713000     |  |        51014000
+|                   |  [totalNumberOfImpressions:50000000, totalRevenue:51014000, offers:[[customer:Acme, campaigns:0, impressions:0, revenue:0], [customer:Lorem, campaigns:10000, impressions:20000, revenue:20000], [customer:Ipsum, campaigns:0, impressions:0, revenue:0], [customer:Dolor, campaigns:14, impressions:980000, revenue:994000], [customer:Mauris, campaigns:1, impressions:49000000, revenue:50000000]]]
+|                   false
+[totalNumberOfImpressions:50000000, totalRevenue:50713000, offers:[[customer:Mauris, campaigns:0, impressions:0, revenue:0], [customer:Dolor, campaigns:713, impressions:49910000, revenue:50623000], [customer:Lorem, campaigns:45000, impressions:90000, revenue:90000], [customer:Ipsum, campaigns:0, impressions:0, revenue:0], [customer:Acme, campaigns:0, impressions:0, revenue:0]]]
+
+	at CampaignResourceSpec.When scenario #scenario(CampaignResourceSpec.groovy:31)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">When scenario [request:[monthlyInventory:2000000000, specifications:[[customer:Acme, impressions:1000000, price:5000], [customer:Lorem, impressions:2000000, price:9000], [customer:Ipsum, impressions:3000000, price:20000]]], response:[totalNumberOfImpressions:2000000000, totalRevenue:13330000, offers:[[customer:Acme, campaigns:2, impressions:2000000, revenue:10000], [customer:Lorem, campaigns:0, impressions:0, revenue:0], [customer:Ipsum, campaigns:666, impressions:1998000000, revenue:13320000]]]]</td>
+<td>0.267s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">When scenario [request:[monthlyInventory:32356000, specifications:[[customer:Acme, impressions:2000000, price:200], [customer:Lorem, impressions:3500000, price:400], [customer:Ipsum, impressions:2300000, price:210], [customer:Dolor, impressions:8000000, price:730], [customer:SIT, impressions:10000000, price:1000], [customer:Amet, impressions:1500000, price:160], [customer:Mauris, impressions:1000000, price:100]]], response:[totalNumberOfImpressions:32000000, totalRevenue:3620, offers:[[customer:Acme, campaigns:0, impressions:0, revenue:0], [customer:Lorem, campaigns:8, impressions:28000000, revenue:3200], [customer:Ipsum, campaigns:0, impressions:0, revenue:0], [customer:Dolor, campaigns:0, impressions:0, revenue:0], [customer:SIT, campaigns:0, impressions:0, revenue:0], [customer:Amet, campaigns:2, impressions:3000000, revenue:320], [customer:Mauris, campaigns:1, impressions:1000000, revenue:100]]]]</td>
+<td>3.365s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">When scenario [request:[monthlyInventory:50000000, specifications:[[customer:Acme, impressions:2000000, price:200], [customer:Lorem, impressions:2, price:2], [customer:Ipsum, impressions:3, price:2], [customer:Dolor, impressions:70000, price:71000], [customer:Mauris, impressions:49000000, price:50000000]]], response:[totalNumberOfImpressions:50000000, totalRevenue:51014000, offers:[[customer:Acme, campaigns:0, impressions:0, revenue:0], [customer:Lorem, campaigns:10000, impressions:20000, revenue:20000], [customer:Ipsum, campaigns:0, impressions:0, revenue:0], [customer:Dolor, campaigns:14, impressions:980000, revenue:994000], [customer:Mauris, campaigns:1, impressions:49000000, revenue:50000000]]]]</td>
+<td>0.472s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>INFO  [2016-06-15 06:19:45,198] org.eclipse.jetty.util.log: Logging initialized @2935ms
+INFO  [2016-06-15 06:19:45,344] io.dropwizard.server.ServerFactory: Starting ImpressionCampaignApplication
+INFO  [2016-06-15 06:19:45,361] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2016-06-15 06:19:45,382] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2016-06-15 06:19:45,435] org.eclipse.jetty.setuid.SetUIDListener: Opened application@1339616c{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:45,436] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@529c002c{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:45,439] org.eclipse.jetty.server.Server: jetty-9.2.13.v20150730
+INFO  [2016-06-15 06:19:46,270] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    POST    /campaign (impression.campain.resource.CampaignResource)
+
+INFO  [2016-06-15 06:19:46,274] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@5adaf019{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:46,277] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2016-06-15 06:19:46,281] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@758b7bb9{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:46,287] org.eclipse.jetty.server.ServerConnector: Started application@1339616c{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:46,287] org.eclipse.jetty.server.ServerConnector: Started admin@529c002c{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:46,287] org.eclipse.jetty.server.Server: Started @4025ms
+127.0.0.1 - - [15/Jun/2016:06:19:46 +0000] &quot;POST /campaign HTTP/1.1&quot; 200 532 &quot;-&quot; &quot;ImpressionCampaignApplication (test client)&quot; 211
+INFO  [2016-06-15 06:19:47,128] org.eclipse.jetty.server.ServerConnector: Stopped application@1339616c{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,130] org.eclipse.jetty.server.ServerConnector: Stopped admin@529c002c{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,132] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@758b7bb9{/,null,UNAVAILABLE}
+INFO  [2016-06-15 06:19:47,135] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@5adaf019{/,null,UNAVAILABLE}
+INFO  [2016-06-15 06:19:47,261] io.dropwizard.server.ServerFactory: Starting ImpressionCampaignApplication
+INFO  [2016-06-15 06:19:47,261] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2016-06-15 06:19:47,263] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2016-06-15 06:19:47,268] org.eclipse.jetty.setuid.SetUIDListener: Opened application@7bd3b{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,269] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@16eb5b04{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,269] org.eclipse.jetty.server.Server: jetty-9.2.13.v20150730
+INFO  [2016-06-15 06:19:47,405] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    POST    /campaign (impression.campain.resource.CampaignResource)
+
+INFO  [2016-06-15 06:19:47,407] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@337d90d0{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:47,408] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2016-06-15 06:19:47,410] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@49cbaaf5{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:47,413] org.eclipse.jetty.server.ServerConnector: Started application@7bd3b{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,416] org.eclipse.jetty.server.ServerConnector: Started admin@16eb5b04{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,416] org.eclipse.jetty.server.Server: Started @5155ms
+127.0.0.1 - - [15/Jun/2016:06:19:47 +0000] &quot;POST /campaign HTTP/1.1&quot; 200 415 &quot;-&quot; &quot;ImpressionCampaignApplication (test client)&quot; 18
+INFO  [2016-06-15 06:19:47,588] org.eclipse.jetty.server.ServerConnector: Stopped application@7bd3b{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,598] org.eclipse.jetty.server.ServerConnector: Stopped admin@16eb5b04{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,599] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@49cbaaf5{/,null,UNAVAILABLE}
+INFO  [2016-06-15 06:19:47,601] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@337d90d0{/,null,UNAVAILABLE}
+INFO  [2016-06-15 06:19:47,699] io.dropwizard.server.ServerFactory: Starting ImpressionCampaignApplication
+INFO  [2016-06-15 06:19:47,700] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2016-06-15 06:19:47,700] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2016-06-15 06:19:47,703] org.eclipse.jetty.setuid.SetUIDListener: Opened application@1fac9a71{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,703] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@54577398{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,703] org.eclipse.jetty.server.Server: jetty-9.2.13.v20150730
+INFO  [2016-06-15 06:19:47,797] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    POST    /campaign (impression.campain.resource.CampaignResource)
+
+INFO  [2016-06-15 06:19:47,800] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@c42af59{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:47,800] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2016-06-15 06:19:47,802] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@6c3fcdf6{/,null,AVAILABLE}
+INFO  [2016-06-15 06:19:47,803] org.eclipse.jetty.server.ServerConnector: Started application@1fac9a71{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,805] org.eclipse.jetty.server.ServerConnector: Started admin@54577398{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,806] org.eclipse.jetty.server.Server: Started @5545ms
+127.0.0.1 - - [15/Jun/2016:06:19:47 +0000] &quot;POST /campaign HTTP/1.1&quot; 200 290 &quot;-&quot; &quot;ImpressionCampaignApplication (test client)&quot; 17
+INFO  [2016-06-15 06:19:47,870] org.eclipse.jetty.server.ServerConnector: Stopped application@1fac9a71{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2016-06-15 06:19:47,874] org.eclipse.jetty.server.ServerConnector: Stopped admin@54577398{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2016-06-15 06:19:47,874] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@6c3fcdf6{/,null,UNAVAILABLE}
+INFO  [2016-06-15 06:19:47,876] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@c42af59{/,null,UNAVAILABLE}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.5</a> at Jun 15, 2016 8:19:48 AM</p>
+</div>
+</div>
+</body>
+</html>

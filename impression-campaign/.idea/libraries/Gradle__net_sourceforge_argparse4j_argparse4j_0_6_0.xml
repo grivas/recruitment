@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.sourceforge.argparse4j:argparse4j:0.6.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.6.0/249d45cf3a76713563644657be6b2bcc2cac5dec/argparse4j-0.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.6.0/75f43e24ebd1049f3d70aba00f5ffa22bd200f60/argparse4j-0.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
