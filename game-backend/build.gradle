@@ -1,0 +1,25 @@
+group 'game-backend'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+    testCompile 'cglib:cglib-nodep:3.2.2'
+    testCompile 'org.objenesis:objenesis:2.2'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'backend.Main'
+        )
+    }
+}
