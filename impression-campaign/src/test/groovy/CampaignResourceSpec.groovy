@@ -23,7 +23,7 @@ public class CampaignResourceSpec extends Specification {
         Client client = new JerseyClientBuilder(jersey.getEnvironment()).build("test client");
         def expected = scenario.response
         when:
-        def response = client.target(String.format("http://localhost:%d/campaign", jersey.localPort))
+        def response = client.target("http://localhost:${jersey.localPort}/campaign")
                 .request().post(Entity.json(scenario.request))
         def actual = response.readEntity(Map.class)
         then:
